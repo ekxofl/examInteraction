@@ -1,0 +1,107 @@
+header{
+	width: 100%;
+	position: fixed;
+	z-index: 999999;
+}
+section {
+	overflow: hidden;
+}
+.center {
+	width: 1320px;
+	margin:0 auto;
+	margin-top: 50px;
+}
+.title {
+	width: 100%;
+	text-align: center;
+	font-size: 50px;
+	line-height: 58px;
+	font-weight: bold;
+}
+
+.circleExam {
+    text-align: center;
+}
+
+.circleBox {
+	margin: 0 auto;
+	margin-top: 50px;
+	position: relative;
+	width: 300px;
+	height: 100px;
+}
+
+@keyframes circle {
+    from {
+        transform:translate(-50%, -50%) rotate(0);
+    }
+    to {
+        transform:translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.circle {
+	width: 60px;
+  height: 60px;
+  border: 10px solid;
+  position: absolute;
+  left: 150px;
+  top: 14px;
+	animation-duration: 9s;
+	animation-name: circle;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+
+.title { width: 100%; text-align: center;}
+input {
+	display: none;
+}
+
+div.titleLine label{
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	border:2px solid #666;
+	background: #fff;
+	transition: 0.3s;
+	border-radius:50%;
+	cursor: pointer;
+}
+
+#pos1:checked~.pos label:nth-child(1){
+	background: #666;
+}
+#pos2:checked~.pos label:nth-child(1){
+	background: #666;
+}
+#pos3:checked~.pos label:nth-child(1){
+	background: #666;
+}
+#pos4:checked~.pos label:nth-child(1){
+	background: #666;
+}
+#pos5:checked~.pos label:nth-child(1){
+	background: #666;
+}
+
+}
+div.titleLine ul {
+	margin-top: 50px;
+}
+
+div.titleLine ul li {
+	display: inline-block;
+}
+div.slider {
+	margin-top: 50px;
+}
+
+div.slider ul{
+	margin:0 auto;
+	width: 400%;
+	height: 100%;
+	transition: 1s;
+}
